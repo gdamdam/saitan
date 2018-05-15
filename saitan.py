@@ -80,11 +80,14 @@ def save_with_archiveis(url):
     try:
         archiveis_location = archiveis.capture(url)
         print("archive.is saved on: {}".format(archiveis_location))
+        re.sub('^.+/','',archiveis_location)
+        archiveis_download = 'https://archive.today/download/{}.zip'.format(re.sub('^.+/','',archiveis_location))
+        msg = '{} downlodable at {}'.format(archiveis_location,archiveis_download)
     except Exception as e:
         print("         sorry, something went wrong :(\n {}".format(e))
         print("Impossible to save the URL to archive.is")
-        archiveis_location = 'FAILED'
-    return archiveis_location
+        msg = 'FAILED'
+    return msg
 
 
 def save_localcopy(url):
