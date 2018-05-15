@@ -129,7 +129,7 @@ def opentimestamp(filename):
     print("timestamping the file {} using opetimestamps.org...".format(filename))
     try:
         subprocess.run(["ots", "stamp", filename])
-        print("\nTimestamp generated! Store the {}.ots with the original {} for future verification.".format(filename, filename))
+        print("\nTimestamp generated!\nStore the {}.ots with the original {} for future verification.".format(filename, filename))
         fileout = filename+'.ots'
     except Exception as e:
         print("         sorry, something went wrong :(\n {}".format(e))
