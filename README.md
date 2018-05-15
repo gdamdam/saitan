@@ -64,6 +64,11 @@ To verify the timestamp you can use the form on the website https://opentimestam
 Remember that it takes a few hours for the timestamp to get confirmed by the Bitcoin blockchain.
 
 
+## Known Issues
+
+The tool for some website fails retrieving all the components like some external contents and embedded videos.
+
+
 ## License (GPLv3)
 
 Copyright (C) 2018 saitan developers.
