@@ -60,8 +60,8 @@ To open the WARC file we recommend to use [Webrecorder Player](https://github.co
 ## Verify the timestamp
 
 The file timestamped and the timestamp file _.ots_ must be stored together to allow future verification.
-To verify the timestamp you can use the form on the website https://opentimestamps.org
-Remember that it takes a few hours for the timestamp to get confirmed by the Bitcoin blockchain.
+To verify the timestamp you can use the form on the website https://opentimestamps.org.
+Remember that it takes a few hours for the timestamp to get confirmed.
 
 
 ## To download content from the Wayback Machine
