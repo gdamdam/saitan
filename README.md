@@ -1,4 +1,4 @@
-# saitan - v0.1
+# saitan - v1.0
 
 Saintan allows you to save a webpage from the Internet to a web archiving tool like the Internet Archive's [Wayback Machine](https://web.archive.org/) and [archive.is](https://archvie.is).
 Saitan allows you also to download a local copy of the page, and all its components in a [WARC](https://en.wikipedia.org/wiki/Web_ARChive) file, calculate its [checksum](https://en.wikipedia.org/wiki/Checksum) SHA256 and [timestamp](https://en.wikipedia.org/wiki/Timestamp) it to prove that the file  existed prior to some point in time using the free service provided by [opentimestamps.org](https://opentimestamps.org).
