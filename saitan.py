@@ -93,7 +93,7 @@ def save_localcopy(url):
     print('Saving local copy of {}'.format(url))
     warc_filename = get_filename_from_url(url)
     try:
-        subprocess.run(["wget", "-p", "-k", "-H", "--delete-after", '-e', 'robots=off', "--warc-file", warc_filename, url])
+        subprocess.run(["wget", "-q", "-p", "-k", "-H", "--delete-after", '-e', 'robots=off', "--warc-file", warc_filename, url])
         print("WARC {}.warc.gz file saved locally.".format(warc_filename))
         warc_filename = warc_filename+'.warc.gz'
     except Exception as e:
@@ -150,7 +150,7 @@ def get_filename_from_url(url):
 def print_report(results):
     print('\n')
     print(80*'=')
-    for i in ['waybackmachine','archiveis','localcopy','ots','sha256']:
+    for i in ['waybackmachine','archiveis','localcopy','opentimestamps','sha256']:
         if i in results.keys():
             print(":: {: >16} :  {: >16}".format(i, results[i]))
     print(80*'=')
@@ -170,7 +170,7 @@ def main(url):
     if args.localcopy:
         results['localcopy'] = save_localcopy(url)
         if args.opentimestamp:
-            results['ots'] = opentimestamp(results['localcopy'])
+            results['opentimestamps'] = opentimestamp(results['localcopy'])
         if args.sha256:
             results['sha256'] = get_sha256(results['localcopy'])
 
