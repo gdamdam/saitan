@@ -119,6 +119,7 @@ def get_sha256(filename):
     outputfilename = filename+'.sha256'
     f = open(outputfilename,'w')
     f.write(sha256.hexdigest())
+    f.write('\n')
     f.close()
     return sha256.hexdigest()
 
