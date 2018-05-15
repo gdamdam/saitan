@@ -2,7 +2,7 @@
 
 Saintan allows you to save a webpage from the Internet to a web archiving tool like the Internet Archive's [Wayback Machine](https://web.archive.org/) and [archive.is](https://archvie.is).
 Saitan allows you also to download a local copy of the page, and all its components in a [WARC](https://en.wikipedia.org/wiki/Web_ARChive) file, calculate its [checksum](https://en.wikipedia.org/wiki/Checksum) SHA256 and [timestamp](https://en.wikipedia.org/wiki/Timestamp) it to prove that the file  existed prior to some point in time using the free service provided by [opentimestamps.org](https://opentimestamps.org).
-To open the WARC file we recommend to use [webrecorderplayer](https://github.com/webrecorder/webrecorderplayer-electron).
+To open the WARC file we recommend you use [webrecorderplayer](https://github.com/webrecorder/webrecorderplayer-electron).
 
 
 ## Installation
@@ -13,12 +13,12 @@ To run this script you need python3, clone this repository and install some extr
     cd saitan
     pip3 install -r requirements.txt
 
-You need also to have _*wget*_ installed in you machine.
+*IMPORTANT*: You need to have [wget](https://en.wikipedia.org/wiki/Wget) installed on you machine.
 
 
 ## Usage
 
-To save the page http://example.com on the Wayback Machine you can use:
+To save a page on the Wayback Machine you can use:
 
     python3 saitan.py -w http://exemple.com
 
