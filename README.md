@@ -9,7 +9,7 @@ To open the WARC file we recommend you use [webrecorderplayer](https://github.co
 
 To run this script you need python3, clone this repository and install some extra packages
 
-    git clone
+    git clone https://github.com/gdamdam/saitan.git
     cd saitan
     pip3 install -r requirements.txt
 
