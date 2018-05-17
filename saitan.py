@@ -69,6 +69,7 @@ def save_with_waybackmachine(url):
     except Exception as e:
         print("         sorry, something went wrong :(")
         print("Impossible to save the URL to the wayabck machine")
+        print("ERROR: {}".format(str(e)))
         wayback_location = 'FAILED'
     return wayback_location
 
@@ -86,6 +87,7 @@ def save_with_archiveis(url):
     except Exception as e:
         print("         sorry, something went wrong :(\n {}".format(e))
         print("Impossible to save the URL to archive.is")
+        print("ERROR: {}".format(str(e)))
         msg = 'FAILED'
     return msg
 
@@ -102,6 +104,7 @@ def save_localcopy(url):
     except Exception as e:
         print("         sorry, something went wrong :(\n {}".format(e))
         print("Impossible to download the URL in a local WARC file")
+        print("ERROR: {}".format(str(e)))
         warc_filename = 'FAILED'
     return warc_filename
 
@@ -137,6 +140,7 @@ def opentimestamp(filename):
         fileout = filename+'.ots'
     except Exception as e:
         print("         sorry, something went wrong :(\n {}".format(e))
+        print("ERROR: {}".format(str(e)))
         fileout = 'FAILED'
     return fileout
 
