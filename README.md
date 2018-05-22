@@ -33,7 +33,7 @@ to save a local copy in a WARC file:
 You can save the page in several place with a single command concatenating the arguments.
 To save a page on the wayback machine, archive.is and in a local WARC file:
 
-    python saitan.py -lwa http://example.com
+    python3 saitan.py -lwa http://example.com
 
 To timestamp the WARC file using opentimestamps.org you can type:
 
