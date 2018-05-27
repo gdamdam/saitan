@@ -1,4 +1,4 @@
-# saitan - v0.9
+# saitan - v0.9 - if you see something, save something!
 
 Saitan allows you to save a webpage from the Internet to a web archiving tool like the Internet Archive's [Wayback Machine](https://web.archive.org/) and [archive.is](https://archvie.is).
 Saitan allows you also to download a local copy of the page, and all its components in a [WARC](https://en.wikipedia.org/wiki/Web_ARChive) file, calculate its [checksum](https://en.wikipedia.org/wiki/Checksum) SHA256 and [timestamp](https://en.wikipedia.org/wiki/Timestamp) it to prove that the file  existed prior to some point in time using the free service provided by [opentimestamps.org](https://opentimestamps.org).
@@ -66,9 +66,7 @@ Remember that it takes a few hours for the timestamp to get confirmed.
 
 ## To download content from the Wayback Machine
 
-To download a website or a page from the waybackmachine you can use the Wayback Machine Downloader:
-
-    https://github.com/hartator/wayback-machine-downloader/
+To download a website or a page from the waybackmachine you can use the Wayback Machine Downloader: [https://github.com/hartator/wayback-machine-downloader/](https://github.com/hartator/wayback-machine-downloader/)
 
 
 ## To download from archive.is
