@@ -76,8 +76,8 @@ Follow the script's output instructions.
 
 ## Known Issues
 
-The tool for some website fails retrieving all the components like some external contents and embedded videos.
-
+* The tool for some website fails retrieving all the components like some external contents and embedded videos.
+* waybackmachine's _save page now_ does not work correctly when called in a script, but it saves only the main page not the resource.
 
 ## License (GPLv3)
 
